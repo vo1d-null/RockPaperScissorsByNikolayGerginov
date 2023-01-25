@@ -1,5 +1,13 @@
 package com.example.rockpaperscissorsbynikolaygerginov;
-
+// To work properly first :
+// Add javafx library from Files -> Project structure
+// Second : Add VM options from Run ->Edit Configurations ->Modify Options -> Add VM Options
+// Then paste this in the window :
+// --module-path
+//"E:\JDKS\JavaFX\javafx-sdk-19.0.2.1\lib"
+//--add-modules
+//javafx.controls,javafx.fxml
+// Should work properly now.
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -27,7 +35,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(root,1200,800, Color.DARKGRAY);
         Stage stage = new Stage();
 
-        Image icon = new Image("D:\\IntelliJ\\Projects\\RockPaperScissorsByNikolayGerginov\\src\\icon.jpeg");
+        Image icon = new Image("E:\\IntelliJ\\Projects\\RockPaperScissorsByNikolayGerginov\\src\\icon.jpeg");
         stage.getIcons().add(icon);
         stage.setTitle("The Rock Paper Scissors Game by Nikolay Gerginov");
 
@@ -37,7 +45,7 @@ public class HelloApplication extends Application {
         text.setY(80);
         text.setFont(Font.font("Impact",80));
 
-        Image image = new Image("D:\\IntelliJ\\Projects\\RockPaperScissorsByNikolayGerginov\\src\\icon.jpeg");
+        Image image = new Image("E:\\IntelliJ\\Projects\\RockPaperScissorsByNikolayGerginov\\src\\icon.jpeg");
         ImageView imageView = new ImageView(image);
         imageView.setX(200);
         imageView.setY(100);
